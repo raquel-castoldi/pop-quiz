@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import QuizData from "./quiz-data.js";
 import "./styles.css";
 
@@ -17,7 +17,7 @@ const Quiz = () => {
     setQuizStarted(true);
     };
 
-    const handleAnswerOptionClick = (isCorrect) => {
+    const handleAnswerOptionClick = useCallback((isCorrect) => {
     if (isCorrect) {
         setScore(score + 1);
     }
@@ -29,7 +29,7 @@ const Quiz = () => {
     } else {
         setShowScore(true);
     }
-    };
+    }, [currentQuestion, score]);
 
     useEffect(() => {
     let timerId;
