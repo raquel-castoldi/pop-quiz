@@ -50,7 +50,7 @@ const Quiz = () => {
     return () => {
         clearInterval(timerId);
     };
-    }, [quizStarted, showScore, timer]);
+    }, [handleAnswerOptionClick, quizStarted, showScore, timer]);
 
     const handleRetry = () => {
     setCurrentQuestion(0);
