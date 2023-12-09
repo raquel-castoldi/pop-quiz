@@ -7,7 +7,14 @@
   font-weight: bold;
 }
 
-/*Background and items within*/
+/*Play/Retry*/
+.start-section, .results-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Background and body*/
 body {
 margin: 0;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -29,7 +36,7 @@ align-items: center;
 min-height: 100vh;
 }
 
-/*Game Area*/
+/*Game*/
 .app {
 background-color:#f4b8da;
 width: 450px;
@@ -37,43 +44,57 @@ height: 250px;
 border-radius: 15px;
 padding: 20px;
 box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
-display: flex;
-justify-content: center;
 text-align: center;
 padding-top: 50px;
 
+}
+
+/*Timer*/
+.timer-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+  overflow: hidden;
+}
+  
+  .timer-bar-fill {
+  height: 100%;
+  background-color: #e68bbe; 
 }
 
 /*Questions*/
 .question-count span {
 margin: 10px;
 font-size: 28px;
+
 }
 
 .question-text {
 margin-bottom: 12px;
-padding: 15px;
+padding: 10px;
 font-size: 18px;
+
 }
 
-/*Answer Options*/
+/*Answers*/
 .answer-options {
-width: 50%;
-flex-direction: column;
-justify-content: space-between
+width: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.answer-options button {
+  width: 45%; 
+  margin-bottom: 10px;
 }
 
 /*Buttons*/
-
-.start-button {
-  justify-content: flex-center;
-  margin-left: 100px;
-  margin-right: 100px;
-  justify-content: center;
-}
-
-.reset-button {
-  justify-content: flex-center;
+.start-button, .reset-button {
   margin-left: 100px;
   margin-right: 100px;
   justify-content: center;
@@ -86,37 +107,10 @@ color: #ffffff;
 background-color: #e68bbe;
 border-radius: 15px;
 padding: 15px;
-justify-content: center;
-align-items: center;
 border: 5px solid #f4b8da;
 cursor: pointer;
-margin-left: 30px;
 }
 
 button:hover {
 background-color: #e67bb7;
-}
-
-/*Timer*/
-.timer-bar {
-position: absolute;
-bottom: 390px;
-width: 450px;
-height: 20px;
-background-color: #ddd;
-border-radius: 4px;
-margin-bottom: 10px;
-overflow: hidden;
-}
-
-.timer-bar-fill {
-height: 100%;
-background-color: #e68bbe; 
-}
-
-/*Results*/
-.results-section {
-  font-size: 24px;
-  align-items: center;
-  margin-top: 28px;
 }
