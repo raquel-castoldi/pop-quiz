@@ -27,12 +27,21 @@ const QuizData = [
     ],
   },
   {
-    questionText: 'Who played the lead role in the movie "La La Land"?',
+    questionText: 'Which movie won the Academy Award for Best Picture in 2020?',
     answerOptions: [
-      { answerText: 'Bradley Cooper', isCorrect: false },
-      { answerText: 'Emma Stone', isCorrect: true },
-      { answerText: 'Ryan Reynolds', isCorrect: false },
+      { answerText: 'Parasite', isCorrect: true },
+      { answerText: '1917', isCorrect: false },
+      { answerText: 'Joker', isCorrect: false },
+      { answerText: 'Once Upon a Time in Hollywood', isCorrect: false },
+    ],
+  },
+  {
+    questionText: 'Who played the character Tony Stark in the Marvel Cinematic Universe?',
+    answerOptions: [
       { answerText: 'Chris Hemsworth', isCorrect: false },
+      { answerText: 'Robert Downey Jr.', isCorrect: true },
+      { answerText: 'Chris Evans', isCorrect: false },
+      { answerText: 'Mark Ruffalo', isCorrect: false },
     ],
   },
   {
@@ -69,15 +78,6 @@ const QuizData = [
       { answerText: 'Jim Halpert', isCorrect: false },
       { answerText: 'Dwight Schrute', isCorrect: false },
       { answerText: 'Pam Beesly', isCorrect: false },
-    ],
-  },
-  {
-    questionText: 'Which actor portrays the character Spider-Man in the Marvel Cinematic Universe?',
-    answerOptions: [
-      { answerText: 'Andrew Garfield', isCorrect: false },
-      { answerText: 'Tobey Maguire', isCorrect: false },
-      { answerText: 'Tom Holland', isCorrect: true },
-      { answerText: 'Tom Hardy', isCorrect: false },
     ],
   },
   {
