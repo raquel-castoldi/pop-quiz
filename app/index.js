@@ -1,9 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import Page from './page.js';
 
-const root = document.getElementById('root');
-ReactDOM.createRoot(root).render(
+const container = document.getElementById('app');
+const root = createRoot(container);
+root.render(
   <React.StrictMode>
     <Page />
   </React.StrictMode>
