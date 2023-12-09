@@ -31,8 +31,8 @@ const QuizData = [
     answerOptions: [
       { answerText: 'Parasite', isCorrect: true },
       { answerText: '1917', isCorrect: false },
-      { answerText: 'Joker', isCorrect: false },
-      { answerText: 'Once Upon a Time in Hollywood', isCorrect: false },
+      { answerText: 'Little Women', isCorrect: false },
+      { answerText: 'Jojo Rabbit', isCorrect: false },
     ],
   },
   {
