@@ -20,8 +20,8 @@ const QuizData = [
   {
     questionText: 'Which Marvel superhero can shrink and grow in size?',
     answerOptions: [
-      { answerText: 'Thor', isCorrect: false },
       { answerText: 'Ant-Man', isCorrect: true },
+      { answerText: 'Thor', isCorrect: false },
       { answerText: 'Captain America', isCorrect: false },
       { answerText: 'Black Widow', isCorrect: false },
     ],
@@ -65,9 +65,9 @@ const QuizData = [
   {
     questionText: 'In the TV series "The Office," who is the regional manager of Dunder Mifflin Scranton?',
     answerOptions: [
+      { answerText: 'Michael Scott', isCorrect: true },
       { answerText: 'Jim Halpert', isCorrect: false },
       { answerText: 'Dwight Schrute', isCorrect: false },
-      { answerText: 'Michael Scott', isCorrect: true },
       { answerText: 'Pam Beesly', isCorrect: false },
     ],
   },
